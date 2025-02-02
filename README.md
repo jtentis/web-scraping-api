@@ -16,6 +16,8 @@ This project is a scraping API that collects product information listed on eBay 
 📂 web-scraping-api
 ├── 📂 controllers
 │   ├── scrapeController.js  # Handles HTTP requests
+├── 📂 routes
+│   ├── scrapeRoutes.js  # Handles routing
 ├── 📂 services
 │   ├── scrapeService.js  # Main scraping function
 ├── 📂 utils
