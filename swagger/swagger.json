@@ -1,0 +1,55 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "Web Scraping API",
+      "version": "1.0.0",
+      "description": "API for scraping product listings from eBay using AI"
+    },
+    "paths": {
+      "/api/scrape": {
+        "get": {
+          "summary": "Scrape product listings from eBay",
+          "parameters": [
+            {
+              "in": "query",
+              "name": "q",
+              "schema": {
+                "type": "string"
+              },
+              "required": false,
+              "description": "The eBay brand to scrape"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "A list of products",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string"
+                        },
+                        "price": {
+                          "type": "string"
+                        },
+                        "description": {
+                          "type": "string"
+                        },
+                        "link": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
