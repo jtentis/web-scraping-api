@@ -3,7 +3,7 @@
     "info": {
       "title": "Web Scraping API",
       "version": "1.0.0",
-      "description": "API for scraping product listings from eBay using AI"
+      "description": "API for scraping product listings from eBay"
     },
     "paths": {
       "/api/scrape": {

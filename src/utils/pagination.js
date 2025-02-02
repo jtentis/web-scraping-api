@@ -1,9 +1,8 @@
 const { scrapeEbay } = require('../services/scrapeService');
 
 /**
- * Scrapes all eBay search results across multiple pages.
- * @param {string} searchTerm - The _nkw search term from user input.
- * @returns {Array} - The scraped product data from all pages.
+ * @param {string} searchTerm
+ * @returns {Array}
  */
 const scrapeAllPages = async (searchTerm) => {
     let page = 1;

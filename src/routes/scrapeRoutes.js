@@ -9,11 +9,11 @@ const router = express.Router();
  *     summary: Scrape product listings from eBay
  *     parameters:
  *       - in: query
- *         name: url
+ *         name: q
  *         schema:
  *           type: string
  *         required: false
- *         description: The eBay URL to scrape
+ *         description: The eBay brand to scrape
  *     responses:
  *       200:
  *         description: A list of products

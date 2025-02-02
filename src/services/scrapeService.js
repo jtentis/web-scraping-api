@@ -1,9 +1,8 @@
 const puppeteer = require("puppeteer");
 
 /**
- * Scrape product listings from an eBay search page.
- * @param {string} url - The URL of the eBay search page.
- * @returns {Array} - The scraped product data.
+ * @param {string} url
+ * @returns {Array}
  */
 const scrapeEbay = async (url) => {
     console.log(`Launching browser for ${url}...`);
@@ -42,7 +41,7 @@ const scrapeEbay = async (url) => {
                     price: productPrice,
                     link: productLink,
                     state: productState,
-                    description: "-", // Placeholder for the description
+                    description: "-",
                 });
             });
 

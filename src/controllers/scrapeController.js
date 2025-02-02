@@ -4,7 +4,7 @@ const { scrapeAllPages } = require('../utils/pagination');
  * API endpoint to scrape eBay based on the user-provided search term (_nkw).
  */
 const scrapeProducts = async (req, res) => {
-    const searchTerm = req.query.q || "nike"; // Default: "nike"
+    const searchTerm = req.query.q || "nike"; // default: "nike"
     
     try {
         console.log(`Scraping eBay for: ${searchTerm}`);
